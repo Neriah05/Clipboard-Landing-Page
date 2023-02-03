@@ -1,0 +1,103 @@
+/* rem and em do NOT depend on html font-size in media queries! Instead, 1rem = 1em = 16px */
+
+/* How to caculate value = specified breakpoint eg-"1344px" divided by 16px =84em */
+
+/**************************/
+/* BELOW 1200  */
+/**************************/
+
+@media (max-width: 75em) {
+  main {
+    padding-inline: 4.8rem;
+  }
+
+  h1 {
+    font-size: 4.4rem;
+    font-weight: 600;
+  }
+
+  .heading-paragraph {
+    color: hsl(201, 11%, 66%);
+    font-size: 1.5rem;
+    line-height: 1.2;
+    margin-bottom: 3.2rem;
+  }
+
+  .reduce {
+    font-size: 1.4rem;
+  }
+
+  .reduced {
+    font-size: 1.6rem;
+  }
+
+  .reducedd {
+    font-size: 1.5rem;
+  }
+
+  .centered {
+    width: 100%;
+    margin-inline: auto;
+  }
+
+  .heading {
+    margin-bottom: 8rem;
+  }
+
+  .button-box {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+  }
+
+  .computer {
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 7rem;
+    margin-bottom: 7rem;
+  }
+
+  .computer-box {
+    margin-bottom: 5rem;
+    text-align: center;
+    width: 100%;
+  }
+
+  .workflow {
+    margin-top: 5rem;
+    display: grid;
+    grid-template-columns: 1fr;
+
+    justify-content: center;
+    align-items: center;
+    row-gap: 5rem;
+  }
+
+  .logos {
+    display: flex;
+    flex-direction: column;
+    gap: 8rem;
+  }
+
+  footer {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .footer-logo {
+    width: 6.4rem;
+    margin-bottom: 5rem;
+    margin-right: 5rem;
+  }
+
+  .links {
+    flex-direction: column;
+    margin-inline: auto;
+    text-align: center;
+    justify-self: center;
+  }
+
+  .link-one {
+    margin-right: 4rem;
+  }
+}
